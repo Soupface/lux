@@ -61,6 +61,7 @@
 		26DE1FF724770932003D5DF6 /* Lux.h in Headers */ = {isa = PBXBuildFile; fileRef = 26DE1FF524770932003D5DF6 /* Lux.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26E05A342486B8DB009BFB31 /* LookDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E05A332486B8DB009BFB31 /* LookDisplay.swift */; };
 		26E05A362486C20B009BFB31 /* SpecOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E05A352486C20B009BFB31 /* SpecOverview.swift */; };
+		D8135C6124E5F27300BB75B9 /* Stream in Resources */ = {isa = PBXBuildFile; fileRef = D8135C6024E5F27300BB75B9 /* Stream */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -135,6 +136,7 @@
 		26DE1FF624770932003D5DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26E05A332486B8DB009BFB31 /* LookDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookDisplay.swift; sourceTree = "<group>"; };
 		26E05A352486C20B009BFB31 /* SpecOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecOverview.swift; sourceTree = "<group>"; };
+		D8135C6024E5F27300BB75B9 /* Stream */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Stream; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +307,7 @@
 		26CE0E802493139800E62B8A /* Stream */ = {
 			isa = PBXGroup;
 			children = (
+				D8135C6024E5F27300BB75B9 /* Stream */,
 				26CE0E81249313A800E62B8A /* LuxStream.swift */,
 				26CE0E83249313B000E62B8A /* StreamView.swift */,
 				26CE0E85249313B600E62B8A /* Stream+Photon.swift */,
@@ -442,6 +445,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8135C6124E5F27300BB75B9 /* Stream in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,8 +709,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = maxwell.design.Lux;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -730,8 +735,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = maxwell.design.Lux;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
